@@ -80,8 +80,8 @@ const blocks = [
   },
 ];
 
+//create nextboard
 const next = document.querySelector('#next-board');
-
 for (let r = 0; r < 4; r++) {
   const rowDiv = createDiv('row');
   for (let c = 0; c < 4; c++) {
@@ -190,7 +190,7 @@ function moveCheck(direction) {
           lockBlock();
           eraseLine();
           spawnBlock();
-          row--;
+          //row--;
           canMove = true;
         }
       }
@@ -261,9 +261,7 @@ function rotateBlock(isSpawn = false) {
 }
 
 function resetRotateState() {
-  console.table(curBlock.shape);
   for (let i = 0; i < curBlock.rotateState; i++) rotateBlock(true);
-  console.table(curBlock.shape);
 }
 
 function eraseLine() {
