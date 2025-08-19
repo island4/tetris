@@ -22,7 +22,8 @@ export function setCellStyle(cell, color) {
   cell.style.backgroundColor = color;
 }
 
-export function setCellStyle(cell, color, border) {
+setCellStyle(cell, color, border) {
   cell.style.backgroundColor = color;
   cell.style.borderStyle = border;
+
 }
