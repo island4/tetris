@@ -6,6 +6,9 @@
 * {
   font-family: 'Pointless';
 }
+#deviceTest {
+  background-color: green;
+}
 
 body {
   -webkit-user-select: none;
