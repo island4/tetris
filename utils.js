@@ -18,12 +18,7 @@ export function cellAt(targetBoard, x, y) {
   return cell;
 }
 
-export function setCellStyle(cell, color) {
-  cell.style.backgroundColor = color;
-}
-
-setCellStyle(cell, color, border) {
+export function setCellStyle(cell, color, border) {
   cell.style.backgroundColor = color;
   cell.style.borderStyle = border;
-
 }
