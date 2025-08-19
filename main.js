@@ -183,16 +183,7 @@ function moveCheck(direction) {
 
         if (row >= 0 && r >= ROWS && direction == 'down') canMove = false;
         else if (row >= -1 && boardState[r][c] == 1) canMove = false;
-        else if (c < 0 || c > COLS - 1) canMove = false;
-
-        if (direction == 'down' && canMove == false) {
-          if (row == 0) location.reload();
-          lockBlock();
-          eraseLine();
-          spawnBlock();
-          //row--;
-          canMove = true;
-        }
+        else if (c < 0 || c > COLS - 1) canMove = false;      
       }
     }
   }
@@ -221,6 +212,14 @@ function moveBlock(direction) {
     eraseBlock();
     col += direction == 'left' ? -1 : 1;
     drawBlock();
+  }
+
+  if (direction == 'down' && !moveCheck(direction)) {
+    if (row == 0) location.reload();
+    lockBlock();
+    eraseLine();
+    spawnBlock();
+    canMove = true;
   }
 }
 
