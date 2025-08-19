@@ -336,4 +336,6 @@ setTimeout(() => {
   }, 500);
 }, 500);
 
+window.onload = function(){
 window.addEventListener('keydown', handleKeyDown);
+}
