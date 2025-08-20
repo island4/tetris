@@ -57,8 +57,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width:100%;
-  padding-left: 10px;
-  padding-right: 10px;
   background-color: red;
 }
 
@@ -68,6 +66,8 @@ body {
 
 #left-btn,
 #right-btn {
+  margin-left: 10px;
+  margin-right: 10px;
   display: grid;
   grid-template-columns: 180px 180px;
   grid-template-rows: 1fr 1fr;
