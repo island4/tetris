@@ -55,6 +55,8 @@ body {
 #button-box {
   margin: 0;
   height:360px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width:100%;
 }
 
