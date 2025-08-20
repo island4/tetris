@@ -58,6 +58,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.control-btn {
+  height: 180px;
+  width:180px;
+}
+
 .row {
   font-size: 0;
 }
