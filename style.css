@@ -74,6 +74,7 @@ body {
 }
 
 .control-btn {
+  margin: 0;
   height: 180px;
   width: 180px;
 }
