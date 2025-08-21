@@ -1,4 +1,9 @@
 let test = document.querySelector('#deviceTest');
-let device = window.navigator.userAgent;
-let newContent = document.createTextNode(device);
+let ua = window.navigator.userAgent;
+let device = ua.split('(')
+let newContent = document.createTextNode(device[1]);
 test.appendChild(newContent);
+
+if(device[1]) {
+
+}
