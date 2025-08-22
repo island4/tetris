@@ -28,7 +28,7 @@ if(mobileList.includes(device)) {
 
 let leftBtn = document.querySelectorAll(".control-btn")[2];
 leftBtn.appendChild(document.createElement('img'));
-leftBtn.firstElementChild.setAttribute('src', './img/LeftMove');
+leftBtn.firstElementChild.setAttribute('src', './img/LeftMove.png');
 leftBtn.onclick = () => moveBlock('left');
 
 let rightBtn = document.querySelectorAll(".control-btn")[7];
