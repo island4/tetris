@@ -24,9 +24,8 @@ if(mobileList.includes(device)) {
         }
     }
 
-    
+  document.body.insertAdjacentElement("beforeend", buttonBox);
 }
-document.body.insertAdjacentElement("beforeend", buttonBox);
 /*
     <div class="box" id="button-box">
       <div class="box" id="left-btn">
