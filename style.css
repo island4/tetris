@@ -17,7 +17,7 @@ body {
   -ms-use-select: none;
   user-select: none;
 
-  touch-action: none;
+  touch-action: pan-y;
 
   display: flex;
   flex-direction: column;
