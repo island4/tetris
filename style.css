@@ -60,12 +60,12 @@ body {
   background-color: white;
 }
 
-#right-btn {
+.right-btn {
   justify-content: end;
 }
 
-#left-btn,
-#right-btn {
+.left-btn,
+.right-btn {
   margin-left: 10px;
   margin-right: 10px;
   display: grid;
