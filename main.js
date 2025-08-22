@@ -205,11 +205,13 @@ function lockBlock() {
 let isSetTimeOut = false;
 export function moveBlock(direction) {
   if (direction == 'down' && moveCheck(direction)) {
+    isSetTimeOut=false;
     eraseBlock();
     row++;
     drawBlock();
   }
   if ((direction == 'left' || direction == 'right') && moveCheck(direction)) {
+    isSetTimeOut:false;
     eraseBlock();
     col += direction == 'left' ? -1 : 1;
     drawBlock();
@@ -258,6 +260,7 @@ export function rotateBlock(isSpawn = false) {
   });
 
   if (rotateCheck(rotateShape) || isSpawn) {
+    isSetTimeOut=false;
     eraseBlock();
     block.rotateState = (block.rotateState + 1) % 4;
     block.shape = rotateShape;
