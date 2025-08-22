@@ -28,5 +28,24 @@ if(mobileList.includes(device)) {
 
 let leftBtn = document.querySelectorAll(".control-btn")[2];
 leftBtn.onclick = () => moveBlock('left');
+
 let rightBtn = document.querySelectorAll(".control-btn")[7];
-rightBtn.onclick = () => moveBlock('right');
+rightBtn.onclick = () => rightBlock("right");
+
+//let leftRotateBtn = document.querySelectorAll(".control-btn")[0];
+//leftRotateBtn.onclick = () => moveBlock('left');
+
+let rightRotateBtn = document.querySelectorAll(".control-btn")[5];
+rightRotateBtn.onclick = () => rotateBlock();
+
+let downBtn = document.querySelectorAll(".control-btn")[2];
+downBtn.onclick = () => moveBlock('down');
+
+let holdBtn = document.querySelectorAll(".control-btn")[7];
+holdBtn.onclick = () => moveBlock('right');
+
+//let leftBtn = document.querySelectorAll(".control-btn")[2];
+//leftBtn.onclick = () => moveBlock('left');
+
+//let rightBtn = document.querySelectorAll(".control-btn")[7];
+//rightBtn.onclick = () => moveBlock('right');
