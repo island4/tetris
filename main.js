@@ -218,6 +218,7 @@ export function moveBlock(direction) {
   if (direction == 'down' && !moveCheck(direction)) {
     if (row == 0) location.reload();
     if(!isSetTimeOut){
+      isSetTimeOut = true;
       setTimeout(()=>{
         lockBlock();
         eraseLine();
