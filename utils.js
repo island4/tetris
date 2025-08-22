@@ -5,7 +5,7 @@ export function createDiv(className) {
 }
 
 export function createBtn(className) {
-  const div = document.createElement('Btn');
+  const div = document.createElement('button');
   div.classList.add(className);
   return div;
 }
