@@ -26,4 +26,5 @@ if(mobileList.includes(device)) {
   document.body.insertAdjacentElement("beforeend", buttonBox);
 }
 
-document.querySelectorAll(".control-button")[2].onClick = alert("left");
+let leftBtn = document.querySelectorAll(".control-button")[2];
+leftBtn.style.backgroundColor = "red";
