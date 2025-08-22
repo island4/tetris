@@ -10,12 +10,12 @@ test.appendChild(newContent);
 const mobileList = ["iphone", "ipad"];
 
 let buttonBox = createDiv("button-box");
-let leftBtn = createDiv("left-btn");
-let rightBtn = createDiv("right-btn");
+let leftBtnBox = createDiv("left-btn");
+let rightBtnBox = createDiv("right-btn");
 
 if(mobileList.includes(device)) {
-  buttonBox.appendChild(leftBtn);
-  buttonBox.appendChild(rightBtn);
+  buttonBox.appendChild(leftBtnBox);
+  buttonBox.appendChild(rightBtnBox);
 
   for(let i = 0; i < 2; i++ ) {
     for(let j = 0; j < 4; j++) {
