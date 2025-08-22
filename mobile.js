@@ -1,5 +1,5 @@
 import { createDiv, createBtn } from "./utils.js";
-import { moveBlock } from "./main.js";
+import { moveBlock, rotateBlock, holdBlock } from "./main.js";
 
 let test = document.querySelector('#deviceTest');
 let ua = window.navigator.userAgent;
@@ -38,11 +38,11 @@ rightBtn.onclick = () => rightBlock("right");
 let rightRotateBtn = document.querySelectorAll(".control-btn")[5];
 rightRotateBtn.onclick = () => rotateBlock();
 
-let downBtn = document.querySelectorAll(".control-btn")[2];
+let downBtn = document.querySelectorAll(".control-btn")[6];
 downBtn.onclick = () => moveBlock('down');
 
-let holdBtn = document.querySelectorAll(".control-btn")[7];
-holdBtn.onclick = () => moveBlock('right');
+let holdBtn = document.querySelectorAll(".control-btn")[1];
+holdBtn.onclick = () => holdBlock();
 
 //let leftBtn = document.querySelectorAll(".control-btn")[2];
 //leftBtn.onclick = () => moveBlock('left');
