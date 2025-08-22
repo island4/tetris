@@ -241,7 +241,7 @@ function rotateCheck(rotateShape) {
   return canRotate;
 }
 
-function rotateBlock(isSpawn = false) {
+export function rotateBlock(isSpawn = false) {
   const block = curBlock;
   let { shape } = curBlock;
 
@@ -283,7 +283,7 @@ function lineCheck(a) {
   }
 }
 
-function holdBlock() {
+export function holdBlock() {
   resetRotateState();
   const { shape, color } = curBlock;
   let pastBlock = curBlock;
