@@ -1,4 +1,4 @@
-import { createDiv } from "./utils..js";
+import { createDiv } from "./utils.js";
 
 let test = document.querySelector('#deviceTest');
 let ua = window.navigator.userAgent;
