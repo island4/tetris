@@ -216,12 +216,11 @@ export function moveBlock(direction) {
 
   if (direction == 'down' && !moveCheck(direction)) {
     if (row == 0) location.reload();
-    setTimeout(()=>{
+    //setTimeout(()=>{
       lockBlock();
       eraseLine();
       spawnBlock();
-      canMove = true;
-    }, 500);
+    //}, 500);
   }
 }
 
