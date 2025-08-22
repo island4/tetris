@@ -28,3 +28,5 @@ if(mobileList.includes(device)) {
 
 let leftBtn = document.querySelectorAll(".control-btn")[2];
 leftBtn.onclick = () => moveBlock('left');
+let rightBtn = document.querySelectorAll(".control-btn")[2];
+rightBtn.onclick = () => moveBlock('right');
