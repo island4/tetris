@@ -222,9 +222,9 @@ export function moveBlock(direction) {
       lockBlock();
       eraseLine();
       spawnBlock();
+      isSetTimeOut=false;
     }, 500);
   }
-  isSetTimeOut=false;
 }
 
 function rotateCheck(rotateShape) {
