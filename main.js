@@ -202,6 +202,7 @@ function lockBlock() {
   }
 }
 
+let isSetTimeOut = false;
 export function moveBlock(direction) {
   if (direction == 'down' && moveCheck(direction)) {
     eraseBlock();
@@ -214,14 +215,16 @@ export function moveBlock(direction) {
     drawBlock();
   }
 
-  if (direction == 'down' && !moveCheck(direction)) {
+  if (direction == 'down' && !moveCheck(direction) && !isSetTimeOut) {
     if (row == 0) location.reload();
-    //setTimeout(()=>{
+    setTimeout(()=>{
+      isSetTimeOut = true
       lockBlock();
       eraseLine();
       spawnBlock();
-    //}, 500);
+    }, 500);
   }
+  isSetTimeOut=false;
 }
 
 function rotateCheck(rotateShape) {

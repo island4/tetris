@@ -5,6 +5,7 @@
 
 * {
   font-family: 'Pointless';
+  touch-action: manipulation;
 }
 
 #deviceTest {
@@ -16,8 +17,6 @@ body {
   -moz-user-select: none;
   -ms-use-select: none;
   user-select: none;
-
-  touch-action: pan-y;
 
   display: flex;
   flex-direction: column;
