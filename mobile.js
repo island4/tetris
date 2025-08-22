@@ -30,7 +30,7 @@ let leftBtn = document.querySelectorAll(".control-btn")[2];
 leftBtn.onclick = () => moveBlock('left');
 
 let rightBtn = document.querySelectorAll(".control-btn")[7];
-rightBtn.onclick = () => rightBlock("right");
+rightBtn.onclick = () => moveBlock("right");
 
 //let leftRotateBtn = document.querySelectorAll(".control-btn")[0];
 //leftRotateBtn.onclick = () => moveBlock('left');
