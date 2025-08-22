@@ -5,9 +5,9 @@ export function createDiv(className) {
 }
 
 export function createBtn(className) {
-  const div = document.createElement('button');
-  div.classList.add(className);
-  return div;
+  const btn = document.createElement('button');
+  btn.classList.add(className);
+  return btn;
 }
 
 export function updateBlock(shape, action) {
