@@ -1,4 +1,4 @@
-import { createDiv } from "./utils";
+import { createDiv } from "./utils..js";
 
 let test = document.querySelector('#deviceTest');
 let ua = window.navigator.userAgent;
@@ -20,7 +20,7 @@ if(mobileList.includes(device)) {
   for(let i = 0; i < 2; i++ ) {
     for(let j = 0; j < 4; j++) {
       buttonBox.children[i].appendChild(controlBtn);
-      buttonBox.children[i].children[j].createTextNode(i*j);
+      //buttonBox.children[i].children[j].createTextNode(i*j);
     }
   }
   document.body.insertAdjacentElement("beforeend", buttonBox);
