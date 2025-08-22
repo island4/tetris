@@ -17,6 +17,8 @@ body {
   -ms-use-select: none;
   user-select: none;
 
+  touch-action: manipulation;
+
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -82,10 +84,6 @@ body {
 
 .row {
   font-size: 0;
-}
-
-button {
-  touch-action:manipulation;
 }
 
 .cell {
