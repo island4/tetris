@@ -202,7 +202,7 @@ function lockBlock() {
   }
 }
 
-function moveBlock(direction) {
+export function moveBlock(direction) {
   if (direction == 'down' && moveCheck(direction)) {
     eraseBlock();
     row++;

@@ -1,4 +1,5 @@
 import { createDiv, createBtn } from "./utils.js";
+import { moveBlock } from "./main.js";
 
 let test = document.querySelector('#deviceTest');
 let ua = window.navigator.userAgent;
@@ -20,24 +21,9 @@ if(mobileList.includes(device)) {
     for(let j = 0; j < 4; j++) {
       let controlBtn = createBtn("control-btn");
       buttonBox.children[i].appendChild(controlBtn);
-      //buttonBox.children[i].children[j].createTextNode(i*j);
     }
   }
   document.body.insertAdjacentElement("beforeend", buttonBox);
 }
-/*
-    <div class="box" id="button-box">
-      <div class="box" id="left-btn">
-        <button class="control-btn">1</button>
-        <button class="control-btn">2</button>
-        <button class="control-btn">3</button>
-        <button class="control-btn">4</button>
-      </div>
-      <div class="box" id="right-btn">
-        <button class="control-btn">5</button>
-        <button class="control-btn">6</button>
-        <button class="control-btn">7</button>
-        <button class="control-btn">8</button>
-      </div>
-    </div>
-    */
+
+document.querySelectorAll(".control-button")[2].onClick = moveBlock("left");
