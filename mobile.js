@@ -14,16 +14,15 @@ let rightBtn = createDiv("right-btn");
 let controlBtn = createDiv("control-btn");
 
 if(mobileList.includes(device)) {
-    buttonBox.appendChild(leftBtn);
-    buttonBox.appendChild(rightBtn);
+  buttonBox.appendChild(leftBtn);
+  buttonBox.appendChild(rightBtn);
 
-    for(let i = 0; i < 2; i++ ) {
-        for(let j = 0; j < 4; j++) {
-            buttonBox.children[i].appendChild(controlBtn);
-            buttonBox.children[i].children[j].createTextNode(i*j);
-        }
+  for(let i = 0; i < 2; i++ ) {
+    for(let j = 0; j < 4; j++) {
+      buttonBox.children[i].appendChild(controlBtn);
+      buttonBox.children[i].children[j].createTextNode(i*j);
     }
-
+  }
   document.body.insertAdjacentElement("beforeend", buttonBox);
 }
 /*
