@@ -215,15 +215,16 @@ export function moveBlock(direction) {
     drawBlock();
   }
 
-  if (direction == 'down' && !moveCheck(direction) && !isSetTimeOut) {
+  if (direction == 'down' && !moveCheck(direction)) {
     if (row == 0) location.reload();
-    setTimeout(()=>{
-      isSetTimeOut = true
-      lockBlock();
-      eraseLine();
-      spawnBlock();
-      isSetTimeOut=false;
-    }, 500);
+    if(!isSetTimeOut){
+      setTimeout(()=>{
+        lockBlock();
+        eraseLine();
+        spawnBlock();
+        isSetTimeOut=false;
+      }, 500);
+    }
   }
 }
 
