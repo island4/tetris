@@ -27,4 +27,4 @@ if(mobileList.includes(device)) {
 }
 
 let leftBtn = document.querySelectorAll(".control-btn")[2];
-leftBtn.style.backgroundColor = 'darkgrey';
+leftBtn.onClick = moveBlock('left');
