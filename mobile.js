@@ -18,7 +18,7 @@ if(mobileList.includes(device)) {
     buttonBox.appendChild(rightBtn);
 
     for(let i = 0; i < 2; i++ ) {
-        for(let j = 0; j < 4; i++) {
+        for(let j = 0; j < 4; j++) {
             buttonBox.children[i].appendChild(controlBtn);
             buttonBox.children[i].children[j].createTextNode(i*j);
         }
