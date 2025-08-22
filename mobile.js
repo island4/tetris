@@ -26,4 +26,4 @@ if(mobileList.includes(device)) {
   document.body.insertAdjacentElement("beforeend", buttonBox);
 }
 
-document.querySelectorAll(".control-button")[2].onClick = moveBlock("left");
+document.querySelectorAll(".control-button")[2].onClick = alert("left");
