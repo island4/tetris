@@ -4,6 +4,12 @@ export function createDiv(className) {
   return div;
 }
 
+export function createBtn(className) {
+  const div = document.createElement('Btn');
+  div.classList.add(className);
+  return div;
+}
+
 export function updateBlock(shape, action) {
   for (let y = 0; y < shape.length; y++) {
     for (let x = 0; x < shape[y].length; x++) {

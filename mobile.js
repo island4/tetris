@@ -1,4 +1,4 @@
-import { createDiv } from "./utils.js";
+import { createDiv, createBtn } from "./utils.js";
 
 let test = document.querySelector('#deviceTest');
 let ua = window.navigator.userAgent;
@@ -11,7 +11,6 @@ const mobileList = ["iphone", "ipad"];
 let buttonBox = createDiv("button-box");
 let leftBtn = createDiv("left-btn");
 let rightBtn = createDiv("right-btn");
-let controlBtn = createDiv("control-btn");
 
 if(mobileList.includes(device)) {
   buttonBox.appendChild(leftBtn);
@@ -19,6 +18,7 @@ if(mobileList.includes(device)) {
 
   for(let i = 0; i < 2; i++ ) {
     for(let j = 0; j < 4; j++) {
+      let controlBtn = createBtn("control-btn");
       buttonBox.children[i].appendChild(controlBtn);
       //buttonBox.children[i].children[j].createTextNode(i*j);
     }
